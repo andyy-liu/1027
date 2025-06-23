@@ -11,9 +11,9 @@ public class ArrayPractice {
 
         // System.out.println(Arrays.toString(numbers));
 
-        // int[] numbers2 = {10, 20, 30, 40, 50};
+        // int[] numbers2 = { 10, 20, 30, 40, 50 };
 
-        // // we can also modify values that have already been set
+        // we can also modify values that have already been set
         // numbers2[3] = 100;
 
         // System.out.println(Arrays.toString(numbers2));
@@ -26,9 +26,10 @@ public class ArrayPractice {
         matrix[0][0] = 1;
         matrix[0][1] = 2;
 
-        System.out.println(Arrays.deepToString(matrix)); // we need to use the Arrays method 'deepToString' to print the arrays within the outer array
+        System.out.println(Arrays.deepToString(matrix)); // we need to use the Arrays
+        // method 'deepToString' to print the arrays within the outer array
 
-        int[][] matrix2 = {{1, 2}, {3, 4}};
+        int[][] matrix2 = { { 1, 2 }, { 3, 4 } };
         System.out.println(Arrays.deepToString(matrix2));
 
     }
