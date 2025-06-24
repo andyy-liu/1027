@@ -1,7 +1,7 @@
 public class Manager extends Employee {
-    
+
     public Manager(String name, int employeeId) {
-        super(name, employeeId);
+        super(name, employeeId); // calls the constructor of the Employee class
     }
 
     private void manage() {
@@ -10,7 +10,7 @@ public class Manager extends Employee {
 
     @Override
     public void work() throws EmployeeException {
-        super.work();
+        super.work(); // calls the work method of the Employee class
         manage();
     }
 }

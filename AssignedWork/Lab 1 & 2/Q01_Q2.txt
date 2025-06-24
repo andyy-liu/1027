@@ -1,0 +1,24 @@
+Q 01.1
+This ensures the instance variables cannot be accessed from other places, only the class it is declared in.
+This gives us privacy and security, not letting other programs directly see / modify the data.
+
+Q 01.2
+We want the methods to be public so that other programs that use our class can call our methods.
+If they were private, they would not be able to call our methods, blocking all the functionality of our class.
+
+Q 01.3
+Yes, assuming they took unique arguments there could be more than one constructor
+
+Q 02.1
+No because Arrays are a fixed size after being created. This means we cannot add or remove elements which is not practical for a library.
+
+Q 02.2
+We would have to add an availability status to track whether or not a book can be borrowed.
+This could be a isAvailable boolean value set to true by default
+We would have to implement a borrowBook method and returnBook method.
+borrowBook would check if the book exists in the library and check if it is available.
+- if available, switch the boolean to false
+- if not available, print a string saying the book is currently checked out.
+returnBook would check if the book exists and if its currently checked out.
+- if checked out, switch the boolean to true
+- if not checked out, print a string saying the book has not been checked out

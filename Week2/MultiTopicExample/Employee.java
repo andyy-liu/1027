@@ -1,7 +1,7 @@
 public class Employee implements EmployeeOperations {
     String name;
     int employeeId;
-    boolean status;
+    boolean status; // true means the employee is available to work, false means they are not
 
     public Employee(String name, int employeeId) {
         this.name = name;

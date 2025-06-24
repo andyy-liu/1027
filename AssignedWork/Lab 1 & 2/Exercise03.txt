@@ -1,0 +1,23 @@
+byte1 is not valid because bytes are 8-bit signed integers which can only go from -128 to +127.
+byte2 is valid as -127 is in the 8-bit signed integer range
+
+short2 is not valid because it is out of range of the 16-bit signed integer.
+short1 is valid because it is in the 16-bit signed integer range (-32,768 to +32,767)
+
+int2 is not valid because it is out of range of the 32-bit signed integer.
+int1 is valid because it is in range of the 32-bit signed integer (-2,147,483,648 to +2,147,483,647)
+
+long2 is not valid because it does not have the 'L' at the end which is required to compile
+long1 is valid because it has an 'L' at the end
+
+float2 is not valid because it does not have an 'F' at the end to differentiate itself from a double
+float1 is valid because it has an 'F' at the end
+
+double2 is not valid because it is wrapped in quotations which makes it a String
+double1 is valid because it is a floating point with no 'F', nor wrapped in quotation marks
+
+char4 is not valid because it contains a several unicode characters instead of a single unicode character
+char1, char2, char3, are all valid as they either contain a single unicode character or the proper format of denoting a unicode character
+
+bool2 is not valid because the F is uppercase
+bool1 is valid because the 'false' is all lowercase
