@@ -1,0 +1,39 @@
+Q 01.1
+Advantages:
+Code consistency and modularity - ensures all exporers implement the same core methods
+Reusability - the default method gives shared functionality that all explorers inherit, reducing code duplication while allowing overriding
+Disadvantages:
+Rigidity - all classes must implement all methods, even if some explorers don't need certain functionality
+Maintenance - if the interface has to be modified (e.g. add new methods), all the classes that implement from it must also be modified
+
+Q 01.2
+Using a single SpaceExplorer array eliminates code duplication as it allows one loop to process all the explorer types.
+It also makes the code more scalable; if we wanted to add new explorer types, we'd only have to add it to the array instead of creating an entirely new one.
+
+Q 01.3
+Preparing for the mission. Checking all systems and supplies
+MarsExplorer is exploring the red planet!
+MarsExplorer is collecting Martian soil samples!
+MarsExplorer: Exploration and sample collection on Mars complete!
+
+Preparing for the mission. Checking all systems and supplies
+MoonExplorer is exploring the lunar surface!
+MoonExplorer is collecting moon rocks!
+MarsExplorer: Exploration and sample collection on the Moon complete!
+
+Preparing for the mission. Checking all systems and supplies
+MoonExplorer is navigating the asteroid belt!
+AsteroidExplorer is collecting asteroid dust samples!
+Asteroid Explorer: Exploration and sample collection on asteroids complete!
+
+Q 02.1
+We throw it at the end of a method signature to explicity state that this method may throw the specific exception.
+It also tells anyone calling the method that they must handle the potential exceptions.
+By placing it there, it also makes the compiler force a caller to handle the exception with try-catch or delegate it up the call stack.
+
+Q 02.2
+When we try to compile, it states that HealthDepletionException and ItemNotFoundException must be caught or declared to be thrown.
+The reason for this is because HealthDepletionException and ItemNotFoundException are checked exceptions which must be caught with try-catch blocks
+
+Q 03.1
+The divide method is declared as static, therefore it belongs to the class itself and can be called directly using the class name.
