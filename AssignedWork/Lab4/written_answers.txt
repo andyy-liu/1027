@@ -1,0 +1,19 @@
+Q 01.1
+Benefits include:
+Persistence - Allows you to easily save an object to disk and restore it later, allowing data to survive project termination
+Network Communication - Objects can be transmitted over networks between different apps or systems
+
+Serialization is not always necessary - some data might be better stored as plain text or more huamn readable formats like JSON or XML
+
+Q 01.2
+Original Character: GameCharacter{name='Link', level=1, health=3, inventory=[Branch]}
+Character saved to file: gameCharacter.ser
+Loaded Character: GameCharacter{name='Link', level=1, health=3, inventory=[Branch]}
+
+Q 02.1
+RATATOUILLE
+
+Q 03.1
+I would write the printListReverse of removeValue method as they both contain several important functions that demonstrate my knowledge
+like traversal and logic (that tends to be harder / more work than the other methods)
+

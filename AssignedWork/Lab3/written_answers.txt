@@ -1,0 +1,40 @@
+Q 01.1
+Factorial of 5 is: 120
+GCD: 6
+Power: 1024.0
+Circle Area: 28.274309999999996
+
+Q 02.1
+User 1: ID = 0, Username = alice
+User 2: ID = 1, Username = bob
+User 3: ID = 2, Username = charlie
+Total number of instances created: 3
+User 4: ID = 3, Username = david
+User 5: ID = 4, Username = eve
+Total number of instances created: 5
+
+Q 02.2
+The password should be an instance variable - each user needs their own unique password so it cannot bs static.
+Password should not be final so users can change their passwords for security reasons.
+
+To update it, we could make a public void updatePassword method with params oldPassword and newPassword, both strings.
+If oldPassword is equal to their old password, we would change the password to the new password.
+
+Q 03.1
+Method signatures have to be unique because the Java compiler uses them to determine which method to call at compile time.
+If we write non unique signatures, we will get a compile-time error because there are ambiguous cases.
+
+Q 03.2
+Area of rectangle (length 5, height 3): 15
+Area of square (side length 4): 16
+Area of circle (radius 3): 28.274333882308138
+Area of triangle (base 6, height 4): 12.0
+
+Q 03.3
+Improved readabilty - users dont have to remember multiple method names, they can just use their appropriate parameters
+Better code organization - all area functionality is grouped under a single method name
+Scalability - easy to add new shapes without disruption previous methods or new method names
+
+Q 04.1
+ChildClass.java attempts to override the printMessage method from ParentClass which will not work because it is declared as final.
+We could fix it by removing final from parent class or use a different method name in ChildClass
