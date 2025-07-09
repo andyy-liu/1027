@@ -1,0 +1,10 @@
+Q 02.1
+The iterative method is faster. This is not too surprising because the program we are implementing is relatively simple.
+The iterative approach uses a constant memory space, regardless of input size which might explain why its faster in simpler operations.
+
+Q 02.2
+If our base case is not properly defined, the program could continue forever as the base case is what tells the program to stop.
+If the program continues forever, we will reach a StackOverflow error because the JVM runs out of memory.
+
+Q 03.2
+Number of palindromes found: 20
