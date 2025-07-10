@@ -1,0 +1,88 @@
+Q 01.3.1
+They may have taken different amounts of time due to the initial ordering of the arrays. Since bubble sort passes through the entire array, swapping adjacent items until it is sorted,
+some arrays may be almost sorted while others may be even sorted in descending order (hypothetical).
+
+Depending on how close the original array is to be sorted in ascending / descending order (depending on the method), this affects how fast the array can be sorted as bubble sort swaps adjacent items
+until everything is sorted.
+
+Q 02.1
+Custom Sort Time: 566900 ns
+Java's Arrays.sort() Time: 221000 ns
+Custom Sorted array: [11, 12, 22, 25, 64]
+Java Sorted array: [11, 12, 22, 25, 64]
+
+Q 02.2
+Java's built in sorting algorithm is around 2.5x faster than my implementation
+
+Memory-efficiency matters because it affects system performance - somethign that is less memory efficient will take more resources which is not ideal.
+
+Time-efficiency matters because it affects the user experience and scalability of a program.
+Given the Big O notation of the specific algorithm, it can drasticallty affect how long it takes when more elements are introduced.
+For real-time systems or interactive software, this can be a big issue as information may be needed quickly and / or people will get annoyed.
+
+Q 03.1
+6 < 12 : same
+12 < 82 : same
+82 > 1 : swap
+82 > -6 : swap
+Pass 1: {6, 12, 1, -6, 82}
+
+6 < 12 : same
+12 > 1 : swap
+12 > -6 : swap
+Pass 2: {6, 1, -6, 12, 82}
+
+6 > 1 : swap
+6 > -6 : swap
+Pass 3: {1, -6, 6, 12, 82}
+
+1 > -6 : swap
+Pass 4: {-6, 1, 6, 12, 82}
+
+
+Q 03.2
+I can't highlight, bold, or underline because this is a plain text file - instead I stated what the key is.
+Key: 12
+6 is < 12 so the key is in the correct position currently.
+Pass 1: {6, 12, 82, 1, -6}
+
+Key: 82
+6 is < 82, 12 < 82 so the key is in the correct position.
+Pass 2: {6, 12, 82, 1, -6}
+
+Key: 1
+82 > 1 : moves to the right
+12 > 1 : moves to the right
+6 > 1 : moves to the right
+Key is now placed at index 0
+Pass 3: {1, 6, 12, 82, -6}
+
+Key: -6
+82 > -6 : moves to the right
+12 > -6 : moves to the right
+6 > -6 : moves to the right
+1 > -6 : moves to the right
+Key is now placed at index 0
+Pass 4: {-6, 1, 6, 12, 82}
+
+Q 03.3
+Minimum: -6
+swap -6 and index 0 which is 6
+Pass 1: {-6 | 12, 82, 1, 6}
+
+Minimum (in unsorted): 1
+swap 1 and index 1 (since index 0 is in the "sorted" list) which is 12
+Pass 2: {-6, 1 | 82, 6, 12}
+
+Minimum (in unsorted): 6
+swap 6 and index 2 which is 82
+Pass 3: {-6, 1, 6 | 12, 82}
+
+Only 2 elements left, already in order.
+
+Q 04.1
+The worst case is when the pivot is always the smallest or largest eleemnt in the partition because this would create unbalance partitions where one side has n-1 elements and the other has 0.
+To mitigate this, we could just take a random pivot to avoid worst-case patterns.
+
+For merge sort, I don't think there would be a worst case scenario because it always splits the arrays at the midpoint, creating balanced sub arrays regardless of the input order.
+To improve it, we could use a different sorting algorithm for smaller arrays like insertion sort.
