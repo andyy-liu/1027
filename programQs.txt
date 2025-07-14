@@ -1,0 +1,86 @@
+The static keyword tells the compiler that the method belongs to the class itself, not an instance.
+This allows the method to be used on the class directly, instead of the instance.
+
+
+public static void employeeCounter {
+    counter += 1
+}
+
+2. A final variable does not let the variable be modified within the method after it is defined.
+A final method does not allow other methods to be overriden by subclasses.
+A final class does not allow other classes to extend from it / have subclasses
+
+final int counter = 5
+
+public final void addOne {
+
+}
+
+final class ParentClass
+
+3. Method overloading is when multiple methods in a class share the same method name but different parameters.
+
+4. Static methods cannot refer to this or super because there is no particular instance of the class to refer to since there are no instances.
+
+5. System.out.print("Hello") // standard output stream without a newline
+System.out.println("World") // with a new line
+System.err.print("Error") // standard ERROR stream
+
+6. 
+
+public void addNodeEnd {
+    Node newNode = new Node(data)
+    if (head == null) {
+        head = newNode; // if the head is null, e.g. there is no head, set the head to the newNode (which is the only node in the list)
+    } else {
+        Node temp = head; 
+        while (temp.next != null) { // while temp.next has a valid pointer
+            temp = temp.next; // traverse the list until temp no longer has a valid pointer (e.g. the end of the list)
+        }
+        temp.next = newNode // set the pointer of the last node to the new last node
+    }
+
+}
+
+7. The insertion of a node at the beginning of a doubly linked list requires a prev to be implemented vs a singly linked list which is just the next node.
+
+public void addNodeSingle {
+    Node newnode = new Node(data)
+    newNode.next = head
+    head = newNode
+}
+
+public void addNodeDouble {
+    Node newNode = new Node(data)
+    if (head != null) {
+        head.prev = newNode
+        newNode.next = head
+    }
+    head = newNode
+}
+
+8. No beacuse a final class means no other subclasses can be created.
+
+final class ParentClass {
+    public void printLine() {
+        System.out.println("Hello")
+    }
+}
+
+class ChildClass extends ParentClass {
+    // will return compile time error
+}
+
+9. A static block lets you instantiate the block only once, when the class is loaded into memory.
+
+10. 
+
+public void deleteNodeSingle(exampleNode) {
+    if (exampleNode.next == null) {
+        exampleNode.
+    }
+    head.next = exampleNode.next
+}
+
+// since we only have access to the current node, we would not be able to determine whether or not it is the tail or head.
+// as a result, there will be issues if the current node is the head or tail as 
