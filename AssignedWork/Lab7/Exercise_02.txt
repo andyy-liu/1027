@@ -1,0 +1,6 @@
+1. The tree is not full as several nodes (F, G, etc.) have only 1 child
+2. The tree is not complete as levels that are not the last (2, 3, and 4) are not fully filled
+3. Not balanced as node F has a height difference of 2
+4. The tree is not perfect as not all internal nodes have 2 children
+5. No, node E is 0 while node D is 17 which violates the property of the BST that says the right child in a given node must be greater than the given node's value
+6. No because the tree is not a BST

@@ -1,0 +1,28 @@
+Queue:
+add(1): Queue = [1]
+add(5): Queue = [1, 5]
+add(9): Queue = [1, 5, 9]
+add(10): Queue = [1, 5, 9, 10]
+add(100): Queue = [1, 5, 9, 10, 100]
+add(21): Queue = [1, 5, 9, 10, 100, 21]
+
+Stack:
+push(1): Stack = [1]
+push(5): Stack = [1, 5]
+push(9): Stack = [1, 5, 9]
+push(10): Stack = [1, 5, 9, 10]
+push(100): Stack = [1, 5, 9, 10, 100]
+push(21): Stack = [1, 5, 9, 10, 100, 21]
+
+Removing two elements
+Queue:
+poll(): removes 1 → Queue = [5, 9, 10, 100, 21]
+poll(): removes 5 → Queue = [9, 10, 100, 21]
+
+Stack:
+pop(): removes 21 → Stack = [1, 5, 9, 10, 100]
+pop(): removes 100 → Stack = [1, 5, 9, 10]
+
+Final result:
+Queue: [9, 10, 100, 21]
+Stack: [1, 5, 9, 10]

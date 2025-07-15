@@ -1,0 +1,10 @@
+Q 01.1
+A stack is efficient for this task because parentheses follow a nested structure where the most recently opened bracket must be closed first.
+Given the stack's LIFO property, this perfectly mirrors this requirement
+
+Q 03.1
+I would use two stacks, one to store all the elements, another to track the minimum element at each level.
+To start, the minStack will have the first element in the main stack stored in it. Once new elements are added, I will use minStack.peek to check if the new element is less than the element in the stack.
+Once a user calls getMin, I can use minStack.peek to return the minimum element. 
+This works due to the LIFO property of stacks - adding new elements to minStack will always be less than the previous element and peek will return the last element added which will be the smallest.
+

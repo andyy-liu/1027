@@ -1,0 +1,25 @@
+Q 01.1
+The formula for the maximum number of nodes given a height of h is 2^(h+1) - 1.
+So 2^6 - 1 = 63 nodes
+
+Q 01.2
+29, 17, 73, 12, 45, 100, 43, 70, 88, 88
+
+Q 01.3
+Preorder: 29, 17, 12, 73, 45, 43, 70, 100, 88, 82
+
+InOrder: 12, 17, 29, 43, 45, 70, 73, 82, 88, 100
+
+Postorder: 12, 17, 43, 70, 45, 82, 88, 100, 73, 29
+
+Q 02.1
+Efficient searching since the tree is ordered and we can simply choose the left or right subtree of a node depending on whether the value we are looking for is greater than or less than
+Using an inorder DFS traversal automatically gives us the sorted sequence which can be helpful
+Using a BST lets us quickly find all values within a given range by using the ordered tree
+
+Q 04.1
+We might use it for auto-complete / search suggestions. We can store previously searched terms and have fast prefix matching given the ordered nature of the BST.
+We could also use it for databse indexing - e.g. find all customers with names between A and M
+
+Q 04.2
+Yes but we would have to implement comparison functionality since BSTs rely on ordering elements.
