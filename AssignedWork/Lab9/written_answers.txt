@@ -1,0 +1,33 @@
+Q 01.1
+I first ran the program to see what response it would give me - I noticed it was correct but still attempted to debug the code to examine the problems.
+What first stood out to me was the first return statement "if (node == null) { return 1;}". It should be 0, not 1 because a tree with only the root node has a depth of 0.
+In addition, depth is defined as the longest path from root to leaf. As a result, the final return statement should be Math.max instead of Math.min
+
+Q 01.2
+1. Empty Tree (null root)
+2. Single node tree (only a root node)
+3. Unbalanced tree (tree with only one child per node)
+4. Trees with only left nodes or right nodes to verify the Math.max logic works correctly
+
+Q 02.1
+From first glance, I noticed that the printers variable was insantiated to the wrong number - I only start with 1 printer, not two.
+Another thing I noticed is that the days should be += 1 because it only takes one day to print the printers.
+The next thing I looked at was the "days += (int) Math.ceil((double) n / printers)".
+- I noticed it added additional days for no logical reason - once we have enough printers (which is determined in the while loop) we only need to add one more day.
+
+When I decided to run the program though, I failed the first test - upon further look, I noticed that the while loop condition was <= which results in it keep building even though we have the right number of printers.
+Changing that to < fixed and made the entire program compile.
+
+I would suggest to evaluate what the question is asking carefully then start logging code sections with print statements to examine what is going on behind the scenes.
+This will help them figure out where their code might be going wrong.
+
+Q 03.1
+Test classes are essential in software development because they provide automated verification that code behaves correctly under various conditions.
+Kind of like a safety net that catches bugs throughout the development process, ensuring that methods work as intended with both normal inputs and edge cases.
+
+Test classes significantly enhance the debugging process by isolating problems and providing immediate feedback when code fails.
+Instead of manually testing every function or waiting for users to report bugs, we can run comprehensive test suites that pinpoint exactly which methods are broken and under what conditions.
+This makes debugging much more efficient because iossues are identified quickly and devs can focus their efforts on specific failing components rather than searching through entire codebases.
+
+In large and demanding projects, not regularly testing code functionality can have cascading effects due to the large scale nature of the project.
+Untested code becomes increasingly difficult to modify or refactor safely, which can lead to slower development cycles and spaghetti code.
