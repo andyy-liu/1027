@@ -1,0 +1,21 @@
+1. Descendants: 46, 42, 55
+Ancestors: 41, 60
+
+2. Find the largest node in the left subtree of 53 and swap the positions then delete the 53.
+This would then be 46, left child 42, right child 55
+
+3. 25, 42, 55, 62, 64, 70
+
+4. 60, 41, 16, 53, 46, 74, 65, 63
+
+5. 60, 41, 74, 16, 53, 65, 25, 46, 55, 63, 70, 42, 62, 64,  
+
+6. 
+Preorder: 60, 41, 16, 25, 53, 46, 42, 55, 74, 65, 63, 62, 64, 70
+Inorder: 25, 16, 41, 42, 46, 53, 55, 60, 62, 63, 64, 65, 70, 74
+Postorder: 25, 16, 42, 46, 55, 53, 41, 62, 64, 63, 70, 65, 74, 60
+
+7. Using the Windows OS as an example, the root directory "C:\" can serve as the root noe of the tree.
+Each subdirectory becomes a child node and files become leaf nodes under their containing directory.
+Each tree node could have file system information like name, type, permissions, size, etc. Directory nodes would have points to their children,
+while file nodes would be leaf nodes.

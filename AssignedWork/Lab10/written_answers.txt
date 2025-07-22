@@ -1,0 +1,7 @@
+Q 02.1
+UnderageException is a checked exception because we indicate it can be thrown in the verifyAge method with "throws".
+
+Q 04.1
+The pivot is essentially the dividing line that splits the array into smaller subarrays.
+A well-chosen pivote creates balanced subarrays that can be solved efficiently in parallel recursive calls while a poor one can create skewed subarrays 
+that don't take full advantage of the divide-and-conquer benefit.
